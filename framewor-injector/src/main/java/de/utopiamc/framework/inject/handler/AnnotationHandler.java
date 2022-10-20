@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class AnnotationHandler {
+public class AnnotationHandler implements IAnnotationHandler {
 
     private final Map<Class<? extends Annotation>, Set<Handler>> annotationHandlers;
 
