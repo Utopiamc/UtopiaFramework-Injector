@@ -8,10 +8,23 @@
     <artifactId>framework-injector-api</artifactId>
     <version>0.0.1-BETA</version>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>14</source>
+                    <target>14</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <repositories>
         <repository>
             <id>utopia</id>
-            <url>http://balance.utopiamc.de:8081/repository/maven-public/</url>
+            <url>https://repo.utopiamc.de/repository/maven-public/</url>
         </repository>
     </repositories>
 
@@ -26,11 +39,11 @@
     <distributionManagement>
         <repository>
             <id>utopia</id>
-            <url>http://balance.utopiamc.de:8081/repository/maven-releases</url>
+            <url>https://repo.utopiamc.de/repository/maven-releases</url>
         </repository>
         <snapshotRepository>
             <id>utopia</id>
-            <url>http://balance.utopiamc.de:8081/repository/maven-snapshots</url>
+            <url>https://repo.utopiamc.de/repository/maven-snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
